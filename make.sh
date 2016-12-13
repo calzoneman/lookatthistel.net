@@ -12,3 +12,5 @@ for f in frames/*.jpg; do
     echo -ne "\0" >> "$manifest"
     i=$((i+1))
 done
+
+node optimize.js "$manifest"
